@@ -36,6 +36,6 @@ VIC 是面向 Windows x64 的虚拟 GigE Vision 工业相机实验项目。现�
 
 VIC 项目源码采用 [GPL-3.0-only](LICENSE)。TAP 公共头文件的来源及许可见 `poc/tap-camera/third_party/NOTICE.md`；GUI 和打包依赖见 `control/THIRD_PARTY_NOTICES.md`。Cognex VisionPro、HALCON 和 TAP 驱动由使用者分别取得，不随本项目分发。
 
-## 发布前注意
+## 公开仓库与发布注意
 
-当前开发仓库的历史中有大型 PCAP、诊断 ZIP 和本机路径，不能直接把整个 Git 历史推到公开 GitHub 仓库。先运行 `scripts/prepare-github-snapshot.ps1` 生成不含历史证据的源码快照，检查该目录后再新建公开仓库。操作细节见 [发布准备说明](docs/PUBLISHING.md)。
+本公开仓库由独立源码快照创建，未包含开发仓库的旧 Git 历史、大型 PCAP、诊断 ZIP 和本机日志。后续更新仍应使用 `scripts/prepare-github-snapshot.ps1` 生成并检查源码快照，不要直接推送原开发仓库。二进制安装包尚未公开；许可核对与安装版 VisionPro 手动验收仍待完成。操作细节见 [发布准备说明](docs/PUBLISHING.md)。
