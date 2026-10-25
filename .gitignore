@@ -1,0 +1,44 @@
+build/
+out/
+dist/
+*.obj
+*.pdb
+*.ilk
+__pycache__/
+.pytest_cache/
+.venv/
+*.log
+.vscode/
+.idea/
+/.vs/
+/log/
+/tests/evidence/09-ui/
+.env
+.env.*
+!.env.example
+/control/winui09/bin/
+/control/winui09/obj/
+
+# Large 06 resolution captures are retained in a hash-verified external archive.
+tests/evidence/06-resolution/**/*.pgm
+tests/evidence/06-tap-address/**/*.pgm
+tests/evidence/06-tap-address/**/*.ppm
+tests/evidence/06-tap-address/**/*.pcap
+tests/evidence/06-tap-address/frozen-gui.png
+tests/evidence/06-quickbuild/*.vpp
+tests/evidence/06-resolution/**/*.ppm
+tests/evidence/06-resolution/**/*.pcap
+
+# Local full-system captures: preserve private raw data and hash manifests separately.
+tests/evidence/tap-r2/**/packets.etl
+tests/evidence/tap-r2/**/packets.pcapng
+tests/evidence/tap-r2/**/drops.pcapng
+tests/evidence/tap-r2/**/packets.txt
+tests/evidence/tap-r2/**/vic-packets.txt
+
+# G04-D full-system captures stay local with an external hash-verified archive.
+tests/evidence/G04-D/**/packets.etl
+tests/evidence/G04-D/**/packets.pcapng
+tests/evidence/G04-D/**/drops.pcapng
+tests/evidence/G04-D/**/packets.txt
+tests/evidence/G04-D/**/vic-packets.txt
